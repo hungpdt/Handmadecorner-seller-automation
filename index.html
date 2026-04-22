@@ -5,44 +5,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Handmadecorner Seller Automation</title>
   <style>
+    :root {
+      --bg: #f7f4ef;
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --muted: #666;
+      --line: #e8e1d8;
+      --accent: #b86b3d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      max-width: 760px;
-      margin: 60px auto;
-      padding: 0 20px;
+      background: linear-gradient(180deg, #f8f5f1 0%, #f3eee8 100%);
+      color: var(--text);
       line-height: 1.6;
-      color: #222;
-      background: #ffffff;
     }
+
+    .wrap {
+      max-width: 860px;
+      margin: 60px auto;
+      padding: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 40px 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #f8ede5;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
     h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
+      margin: 0 0 14px;
+      font-size: 34px;
+      line-height: 1.2;
     }
+
+    .lead {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 24px;
+    }
+
+    .section {
+      margin-top: 26px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 12px;
+    }
+
     p {
-      font-size: 16px;
-      margin-bottom: 14px;
+      margin: 0 0 12px;
+      color: #333;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #333;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Handmadecorner Seller Automation</h1>
+  <div class="wrap">
+    <div class="card">
+      <div class="badge">Private Internal Tool</div>
+      <h1>Handmadecorner Seller Automation</h1>
+      <p class="lead">
+        A private internal seller tool for my Etsy shop.
+      </p>
 
-  <p><strong>Private internal seller tool for my Etsy shop.</strong></p>
+      <div class="section">
+        <h2>About</h2>
+        <p>
+          This application is used to automate daily shop operations for custom handmade products sold on Etsy.
+        </p>
+      </div>
 
-  <p>
-    This application is used to automate daily shop operations, including
-    order tracking, listing synchronization, personalization workflow,
-    inventory monitoring, and internal production management for custom
-    handmade products.
-  </p>
+      <div class="section">
+        <h2>Core Functions</h2>
+        <ul>
+          <li>Order tracking and shop workflow support</li>
+          <li>Listing data synchronization</li>
+          <li>Personalization request tracking</li>
+          <li>Inventory monitoring</li>
+          <li>Internal production organization</li>
+        </ul>
+      </div>
 
-  <p>
-    This app is only used by my shop/team and is not offered to third-party
-    sellers or buyers.
-  </p>
+      <div class="section">
+        <h2>Access</h2>
+        <p>
+          This app is only used by my shop/team and is not offered to third-party sellers or buyers.
+        </p>
+      </div>
 
-  <p>
-    Contact: HandmadecorerbyHung@gmail.com
-  </p>
+      <div class="section">
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:HandmadecorerbyHung@gmail.com">HandmadecorerbyHung@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="footer">
+        <span class="muted">Handmadecorner Seller Automation</span>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
