@@ -1,0 +1,34 @@
+{
+  "name": "etsy-message-telegram-automation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "oauth:init": "tsx src/etsy/auth.ts",
+    "auth": "tsx src/etsy/auth.ts",
+    "serve": "npm run build && npm start",
+    "test:health": "curl.exe http://localhost:3000/health",
+    "test:env": "curl.exe http://localhost:3000/debug/env",
+    "test:telegram": "curl.exe -X POST http://localhost:3000/telegram/test",
+    "test:shop": "curl.exe http://localhost:3000/etsy/shop/test",
+    "test:orders": "curl.exe http://localhost:3000/etsy/orders/latest?limit=3",
+    "test:send-orders": "curl.exe -X POST http://localhost:3000/etsy/orders/latest/send-telegram?limit=3",
+    "poll": "curl.exe -X POST http://localhost:3000/etsy/orders/poll"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
